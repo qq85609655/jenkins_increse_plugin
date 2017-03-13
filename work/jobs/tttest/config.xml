@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.SubversionSCM" plugin="subversion@1.45">
+    <locations>
+      <hudson.scm.SubversionSCM_-ModuleLocation>
+        <remote>https://123.125.97.77/svn/bj/fip/branches/V1.0.1-20150310/fip-common</remote>
+        <local>.</local>
+        <depthOption>infinity</depthOption>
+        <ignoreExternalsOption>false</ignoreExternalsOption>
+      </hudson.scm.SubversionSCM_-ModuleLocation>
+    </locations>
+    <excludedRegions></excludedRegions>
+    <includedRegions></includedRegions>
+    <excludedUsers></excludedUsers>
+    <excludedRevprop></excludedRevprop>
+    <excludedCommitMessages></excludedCommitMessages>
+    <workspaceUpdater class="hudson.scm.subversion.UpdateUpdater"/>
+    <ignoreDirPropChanges>false</ignoreDirPropChanges>
+    <filterChangelog>false</filterChangelog>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <com.doncat.jenkins.plugintest.HelloWorldBuilder plugin="plugin-test@1.0-SNAPSHOT">
+      <trunkPath>https://123.125.97.77/svn/bj/fip/trunk/02src/fip/fip-common</trunkPath>
+      <branchPath>https://123.125.97.77/svn/bj/fip/branches/V1.0.1-20150310/fip-common</branchPath>
+      <localWorkspace>${WORKSPACE}/target</localWorkspace>
+      <packageName>fip-common.jar</packageName>
+    </com.doncat.jenkins.plugintest.HelloWorldBuilder>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

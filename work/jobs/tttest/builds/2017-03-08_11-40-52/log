@@ -1,0 +1,109 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace C:\Users\Lxxx\Desktop\plugin-test\work\workspace\tttest
+Checking out a fresh workspace because there's no workspace at C:\Users\Lxxx\Desktop\plugin-test\work\workspace\tttest
+Cleaning local Directory .
+Checking out https://123.125.97.77/svn/bj/fip/branches/V1.0.1-20150310/fip-common at revision '2017-03-08T11:40:52.764 +0800'
+A         src
+A         src\test
+A         src\test\java
+A         src\test\java\CommonTest.java
+A         src\test\resources
+A         src\main
+A         src\main\java
+A         src\main\java\com
+A         src\main\java\com\unicompayment
+A         src\main\java\com\unicompayment\fip
+A         src\main\java\com\unicompayment\fip\common
+A         src\main\java\com\unicompayment\fip\common\utils
+A         src\main\java\com\unicompayment\fip\common\utils\ftp
+A         src\main\java\com\unicompayment\fip\common\utils\ftp\FTPClientUtil.java
+A         src\main\java\com\unicompayment\fip\common\utils\network
+A         src\main\java\com\unicompayment\fip\common\utils\network\HttpUtils.java
+A         src\main\java\com\unicompayment\fip\common\utils\date
+A         src\main\java\com\unicompayment\fip\common\utils\date\SimpleDateFormatFactory.java
+A         src\main\java\com\unicompayment\fip\common\utils\date\DateUtil.java
+A         src\main\java\com\unicompayment\fip\common\utils\sign
+A         src\main\java\com\unicompayment\fip\common\utils\sign\FipPaySignUtils.java
+A         src\main\java\com\unicompayment\fip\common\utils\sign\ThreeDES.java
+A         src\main\java\com\unicompayment\fip\common\utils\sign\UniPaySignUtils.java
+A         src\main\java\com\unicompayment\fip\common\utils\sign\HashEncrypt.java
+A         src\main\java\com\unicompayment\fip\common\utils\spring
+A         src\main\java\com\unicompayment\fip\common\utils\spring\SpringACUtil.java
+A         src\main\java\com\unicompayment\fip\common\utils\database
+A         src\main\java\com\unicompayment\fip\common\utils\database\SQLSymbol.java
+A         src\main\java\com\unicompayment\fip\common\utils\database\SQLGenerator.java
+A         src\main\java\com\unicompayment\fip\common\utils\database\Constant.java
+A         src\main\java\com\unicompayment\fip\common\utils\database\HandleResult.java
+A         src\main\java\com\unicompayment\fip\common\utils\database\page
+A         src\main\java\com\unicompayment\fip\common\utils\database\page\PageInterceptor.java
+A         src\main\java\com\unicompayment\fip\common\utils\database\page\PageParameter.java
+A         src\main\java\com\unicompayment\fip\common\utils\database\ReturnResult.java
+A         src\main\java\com\unicompayment\fip\common\utils\text
+A         src\main\java\com\unicompayment\fip\common\utils\text\XmlTagUtil.java
+A         src\main\java\com\unicompayment\fip\common\utils\text\DateUtils.java
+A         src\main\java\com\unicompayment\fip\common\utils\text\FileOperation.java
+A         src\main\java\com\unicompayment\fip\common\utils\text\SerNoUtil.java
+A         src\main\java\com\unicompayment\fip\common\utils\text\MathUtil.java
+A         src\main\java\com\unicompayment\fip\common\utils\text\StringUtils.java
+A         src\main\java\com\unicompayment\fip\common\utils\text\MoneyUtils.java
+A         src\main\java\com\unicompayment\fip\common\utils\principle
+A         src\main\java\com\unicompayment\fip\common\utils\principle\ReflectionUtils.java
+A         src\main\java\com\unicompayment\fip\common\utils\principle\GenericsUtils.java
+A         src\main\java\com\unicompayment\fip\common\utils\uuid
+A         src\main\java\com\unicompayment\fip\common\utils\uuid\RandomUtil.java
+A         src\main\java\com\unicompayment\fip\common\utils\uuid\FIPTraceNoGenerator.java
+A         src\main\java\com\unicompayment\fip\common\utils\socket
+A         src\main\java\com\unicompayment\fip\common\utils\socket\SocketClient.java
+A         src\main\java\com\unicompayment\fip\common\mina
+A         src\main\java\com\unicompayment\fip\common\mina\encoder
+A         src\main\java\com\unicompayment\fip\common\mina\encoder\BasicEncoder.java
+A         src\main\java\com\unicompayment\fip\common\mina\codecfactory
+A         src\main\java\com\unicompayment\fip\common\mina\codecfactory\BasicCodecFactory.java
+A         src\main\java\com\unicompayment\fip\common\mina\decoder
+A         src\main\java\com\unicompayment\fip\common\mina\decoder\BasicDecoder.java
+A         src\main\java\com\unicompayment\fip\common\mina\iohandler
+A         src\main\java\com\unicompayment\fip\common\mina\iohandler\BasicIoHandler.java
+A         src\main\java\com\unicompayment\fip\common\mina\server
+A         src\main\java\com\unicompayment\fip\common\mina\server\GenericServer.java
+A         src\main\java\com\unicompayment\fip\common\quartz
+A         src\main\java\com\unicompayment\fip\common\quartz\BasicQuartzJob.java
+A         src\main\generator2
+AU        src\main\generator2\ojdbc14.jar
+AU        src\main\generator2\mybatis-codegen.jar
+A         src\main\generator2\configuration.xml
+A         src\main\generator2\lib
+AU        src\main\generator2\lib\jakarta-regexp-1.5.jar
+AU        src\main\generator2\lib\jakarta-oro.jar
+A         src\main\generator2\run.bat
+A         src\main\resources
+A         pom.xml
+ U        .
+At revision 108468
+[tttest] $ mvn.bat clean package
+The system cannot find the file specified
+FATAL: command execution failed
+[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mjava.io.IOException: Cannot run program "mvn.bat" (in directory "C:\Users\Lxxx\Desktop\plugin-test\work\workspace\tttest"): CreateProcess error=2, 系统找不到指定的文件。
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at hudson.Proc$LocalProc.<init>(Proc.java:244)
+	at hudson.Proc$LocalProc.<init>(Proc.java:216)
+	at hudson.Launcher$LocalLauncher.launch(Launcher.java:803)
+	at hudson.Launcher$ProcStarter.start(Launcher.java:381)
+	at hudson.Launcher$ProcStarter.join(Launcher.java:388)
+	at hudson.tasks.Maven.perform(Maven.java:328)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:770)
+	at hudson.model.Build$BuildExecution.build(Build.java:199)
+	at hudson.model.Build$BuildExecution.doRun(Build.java:160)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:533)
+	at hudson.model.Run.execute(Run.java:1745)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:89)
+	at hudson.model.Executor.run(Executor.java:240)
+Caused by: java.io.IOException: CreateProcess error=2, 系统找不到指定的文件。
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:386)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:137)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 15 more
+Build step 'Invoke top-level Maven targets' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration >
+
+	<classPathEntry location="ojdbc14.jar" />
+	
+	<context id="DB2Tables" targetRuntime="MyBatis3" >
+		<plugin type="com.lz.cts.plugin.OraclePaginationPlugin"></plugin>
+		<plugin type="com.lz.cts.plugin.ModelFieldCustomizePlugin"></plugin>
+		<plugin type="org.mybatis.generator.plugins.SerializablePlugin"></plugin>
+		
+		<commentGenerator>
+			<property name="suppressDate" value="true" />
+			<property name="suppressAllComments" value="true" />
+		</commentGenerator>
+
+		<jdbcConnection driverClass="oracle.jdbc.driver.OracleDriver"
+			connectionURL="jdbc:oracle:thin:@192.168.7.11:1521:testdb" userId="fpep"
+			password="fpep">
+			<property name="remarks" value="true" />
+		</jdbcConnection>
+
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+		<!-- 生成模型的包名和位置 -->
+		<javaModelGenerator targetPackage="com.unicompayment.fpep.common.domain"
+			targetProject="../java">
+			<property name="enableSubPackages" value="true" />
+			<!--<property name="trimStrings" value="true" />-->
+			<!-- <property name="rootClass" value="com.lz.common.dao.domain.BaseEntity" /> -->
+		</javaModelGenerator>
+		<!-- 生成的映射文件包名和位置 -->
+		<sqlMapGenerator targetPackage="com.unicompayment.fpep.common.dao"
+			targetProject="../resources">
+			<property name="enableSubPackages" value="true" />
+		</sqlMapGenerator>
+		<!-- 生成DAO的包名和位置 -->
+		<javaClientGenerator type="XMLMAPPER"
+			targetPackage="com.unicompayment.fpep.common.dao" targetProject="../java">
+			<property name="enableSubPackages" value="true" />
+		</javaClientGenerator>
+		
+		 <!-- <table tableName="T_FPEP_BANK" domainObjectName="TFpepBank"  />
+		<table tableName="T_FPEP_BANK_BRANCE" domainObjectName="TFpepBankBrance" />
+		
+		
+		<table tableName="T_FPEP_CHECK_ADJUST_RECORD" domainObjectName="TFpepCheckAdjustRecord" />
+		<table tableName="T_FPEP_CHECK_BATCH" domainObjectName="TFpepCheckBatch" />
+		<table tableName="T_FPEP_CHECK_FILE_RECORD" domainObjectName="TFpepCheckFileRecord"  />
+		<table tableName="T_FPEP_PARAM" domainObjectName="TFpepParam"  />
+		<table tableName="T_FPEP_RECHARGE" domainObjectName="TFpepRecharge"  />
+		<table tableName="T_FPEP_REMIT_BATCH" domainObjectName="TFpepRemitBatch"  />
+		<table tableName="T_FPEP_REMIT_ORG" domainObjectName="TFpepRemitOrg" />
+		<table tableName="T_FPEP_ACP_RECORD" domainObjectName="TFpepAcpRecord" />
+		<table tableName="T_FPEP_TRANSFER" domainObjectName="TFpepTransfer" />
+		<table tableName="T_FPEP_TRANSFER_TEMP" domainObjectName="TFpepTransferTemp"  />
+		<table tableName="T_FPEP_WITHDRAW_REMIT" domainObjectName="TFpepWithdrawRemit"  />
+		<table tableName="T_FPEP_WITHDRAW_TEMP" domainObjectName="TFpepWithdrawTemp" />
+			<table tableName="T_FPEP_BINDACCT" domainObjectName="TFpepBindacct" />
+		<table tableName="T_FPEP_BINDACCT_TEMP" domainObjectName="TFpepBindacctTemp" />
+		<table tableName="T_FPEP_RECHARGE" domainObjectName="TFpepRecharge"  />
+		<table tableName="T_FPEP_TRANSFER" domainObjectName="TFpepTransfer" />
+		<table tableName="T_FPEP_TRANSFER_TEMP" domainObjectName="TFpepTransferTemp"  />
+		<table tableName="T_FPEP_WITHDRAW" domainObjectName="TFpepWithdraw" />
+		<table tableName="T_FPEP_WITHDRAW_TEMP" domainObjectName="TFpepWithdrawTemp" />
+		<table tableName="T_FPEP_PROVINCE" domainObjectName="TFpepProvince" />
+		<table tableName="T_FPEP_CITY" domainObjectName="TFpepCity" />
+	
+		-->
+		<table tableName="T_FPEP_MONITOR_RECORD" domainObjectName="TFpepMonitorRecord" />
+		
+		
+	    <!--  
+		<table tableName="ENT_ADDRESS" domainObjectName="Address"></table>
+		<table tableName="ENT_BUSINESS" domainObjectName="Business"></table>
+		<table tableName="ENT_BUSI_ORDER" domainObjectName="BusiOrder"></table>
+		<table tableName="ENT_BUSI_PAY_ACC" domainObjectName="BusiPayAcc"></table>
+		<table tableName="ENT_CERTIFICATE" domainObjectName="Certificate"></table>
+		<table tableName="ENT_CLIENT_TAG" domainObjectName="ClientTag"></table>
+		<table tableName="ENT_CUSTCONTACT" domainObjectName="CustContact">
+			<generatedKey column="CONTINFO_ID"
+				sqlStatement=" SELECT SEQ_ENT_CUSTCONTACT.NEXTVAL FROM DUAL" />
+		</table>
+		<table tableName="ENT_CUSTINFO" domainObjectName="CustInfo"></table>
+		<table tableName="ENT_EMAIL_QUEUE" domainObjectName="EmailQueue"></table>
+		<table tableName="ENT_EMAIL_VERIF" domainObjectName="EmailVerif"></table>
+		<table tableName="ENT_ERR_EVENT" domainObjectName="ErrEvent"></table>
+		<table tableName="ENT_IDENTIFICATION" domainObjectName="Identification"></table>
+		<table tableName="ENT_LIMIT" domainObjectName="Limit"></table>
+		<table tableName="ENT_MANAGEINFO" domainObjectName="ManageInfo"></table>
+		<table tableName="ENT_MANAGEMENTINFO" domainObjectName="ManagementInfo"></table>
+		<table tableName="ENT_OPERATOR" domainObjectName="Operator"></table>
+		<table tableName="ENT_OPT_LOGIN" domainObjectName="OptLogin"></table>
+		<table tableName="ENT_OPT_PASSWORD" domainObjectName="OptPassword"></table>
+		<table tableName="ENT_PARAMETER" domainObjectName="Parameter"></table>
+		<table tableName="ENT_PARAMETER_DETAIL" domainObjectName="ParameterDetail"></table>
+		<table tableName="ENT_PARA_MAIN" domainObjectName="ParaMain"></table>
+		<table tableName="ENT_PERSON_CONTACT" domainObjectName="PersonContact">
+			<generatedKey column="CONT_ID"
+				sqlStatement="SELECT SEQ_ENT_CONTACT.NEXTVAL FROM DUAL" />
+		</table>
+		<table tableName="ENT_SECURITY" domainObjectName="Security"></table>
+		<table tableName="ENT_SIGN_ERR_EVENT" domainObjectName="SignErrEvent"></table>
+		<table tableName="ENT_SMS_QUEUE" domainObjectName="SmsQueue"></table>
+		<table tableName="ENT_SMS_VERIF" domainObjectName="SmsVerif"></table>
+		<table tableName="ENT_SYS_EVENT_REG" domainObjectName="SysEventReg"></table>
+		<table tableName="ENT_TRANS_LOG" domainObjectName="TransLog"></table>
+		<table tableName="ENT_TRANS_DETAIL" domainObjectName="TransDetail"></table>
+		<table tableName="ENT_USER" domainObjectName="User"></table>
+		<table tableName="ENT_WTBK_LOG" domainObjectName="WtbkLog"></table>
+		-->
+		
+	</context>
+</generatorConfiguration>

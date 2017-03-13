@@ -1,0 +1,17 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace C:\Users\Lxxx\Desktop\plugin-test\work\workspace\tttest
+Updating https://123.125.97.77/svn/bj/fip/branches/V1.0.1-20150310/fip-common at revision '2017-03-08T11:41:28.109 +0800'
+At revision 108468
+no change for https://123.125.97.77/svn/bj/fip/branches/V1.0.1-20150310/fip-common since the previous build
+FATAL: org.tmatesoft.svn.core.wc.SVNWCUtil.createDefaultOptions(Z)Lorg/tmatesoft/svn/core/internal/wc/DefaultSVNOptions;
+[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mjava.lang.NoSuchMethodError: org.tmatesoft.svn.core.wc.SVNWCUtil.createDefaultOptions(Z)Lorg/tmatesoft/svn/core/internal/wc/DefaultSVNOptions;
+	at com.doncat.jenkins.plugintest.HelloWorldBuilder.perform(HelloWorldBuilder.java:85)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:770)
+	at hudson.model.Build$BuildExecution.build(Build.java:199)
+	at hudson.model.Build$BuildExecution.doRun(Build.java:160)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:533)
+	at hudson.model.Run.execute(Run.java:1745)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:89)
+	at hudson.model.Executor.run(Executor.java:240)

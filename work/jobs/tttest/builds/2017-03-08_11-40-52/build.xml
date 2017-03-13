@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causes>
+        <hudson.model.Cause_-UserIdCause/>
+      </causes>
+    </hudson.model.CauseAction>
+    <hudson.scm.SubversionTagAction plugin="subversion@1.45">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <hudson.scm.SubversionSCM_-SvnInfo>
+            <url>https://123.125.97.77/svn/bj/fip/branches/V1.0.1-20150310/fip-common</url>
+            <revision>8684</revision>
+          </hudson.scm.SubversionSCM_-SvnInfo>
+          <list/>
+        </entry>
+      </tags>
+    </hudson.scm.SubversionTagAction>
+    <hudson.scm.SVNRevisionState plugin="subversion@1.45">
+      <revisions>
+        <entry>
+          <string>https://123.125.97.77/svn/bj/fip/branches/V1.0.1-20150310/fip-common</string>
+          <long>8684</long>
+        </entry>
+      </revisions>
+    </hudson.scm.SVNRevisionState>
+  </actions>
+  <number>1</number>
+  <startTime>1488944452773</startTime>
+  <result>FAILURE</result>
+  <duration>8823</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>C:\Users\Lxxx\Desktop\plugin-test\work\workspace\tttest</workspace>
+  <hudsonVersion>1.580.1</hudsonVersion>
+  <scm class="hudson.scm.SubversionChangeLogParser" plugin="subversion@1.45">
+    <ignoreDirPropChanges>false</ignoreDirPropChanges>
+  </scm>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>
